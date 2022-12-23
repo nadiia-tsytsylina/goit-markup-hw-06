@@ -60,7 +60,7 @@
         <div class="modal">
           <button data-modal-close type="button" class="close-button">
             <svg class="close-icon">
-              <use href="./images/modal.svg#close"></use>
+              <use href="./images/modal.svg#icon-close"></use>
             </svg>
           </button>
           <form class="form js-speaker-form">
@@ -70,14 +70,23 @@
             <div class="form-field">
               <label class="form-label" for="name">Name</label>
               <input class="form-input" type="text" name="name" id="name" />
+              <svg class="form-icon">
+                <use href="./images/modal.svg#icon-person"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="tel">Phone</label>
               <input class="form-input" type="tel" name="tel" id="tel" />
+              <svg class="form-icon">
+                <use href="./images/modal.svg#icon-phone"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="email">Email</label>
               <input class="form-input" type="email" name="email" id="email" />
+              <svg class="form-icon">
+                <use href="./images/modal.svg#icon-email"></use>
+              </svg>
             </div>
             <div class="form-field comment">
               <label class="form-label" for="comment">Comment</label>
@@ -90,15 +99,20 @@
               ></textarea>
             </div>
             <div class="form-field checkbox">
-              <input
-                class="form-input"
-                type="checkbox"
-                name="policy"
-                id="policyx"
-              />
-              <label class="form-label policy" for="policy">
-                I accept the terms and conditions of the
-                <a class="policy-link link" href="">Privacy Policy</a>
+              <label class="form-label" for="policy">
+                <input
+                  class="form-input-checkbox"
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                />
+                <svg class="checkbox-icon">
+                  <use href="./images/modal.svg#icon-click"></use>
+                </svg>
+                <span
+                  >I accept the terms and conditions of the
+                  <a class="policy-link link" href="">Privacy Policy</a></span
+                >
               </label>
             </div>
             <button class="submit-button" type="submit">Send</button>
@@ -535,16 +549,21 @@
         </div>
         <div class="footer-form">
           <div class="footer-form-field">
-            <label class="footer-sl-title" for="email">Subscribe</label>
+            <label class="footer-sl-title" for="footer-email">Subscribe</label>
             <input
               class="footer-form-input"
               type="email"
               name="email"
-              id="email"
+              id="footer-email"
               placeholder="E-mail"
             />
           </div>
-          <button class="footer-button" type="submit">Send</button>
+          <button class="footer-button" type="submit">
+            Subscribe
+            <svg class="subscribe-icon">
+              <use href="./images/modal.svg#icon-subscribe"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
