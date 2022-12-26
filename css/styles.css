@@ -1,5 +1,6 @@
 :root {
-  --brand-color: #4d5ae5;
+  --brand-color: #404bbf;
+  --iris-color: #4d5ae5;
   --title-text: #2e2f42;
   --main-text: #434455;
   --ligth-text: #ffffff;
@@ -72,7 +73,7 @@ textarea {
   margin-right: 77px;
 }
 .logo-accent {
-  color: var(--brand-color);
+  color: var(--iris-color);
 }
 .navigation-item:not(:last-child) {
   margin-right: 40px;
@@ -172,11 +173,13 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.close-button:hover,
+.close-button:focus {
+  background-color: var(--brand-color);
+  fill: #ffffff;
 }
 .close-icon {
   width: 8px;
@@ -218,7 +221,7 @@ textarea {
   padding: 8px 16px;
 }
 .form-input:focus {
-  border: 1px solid var(--brand-color);
+  border: 1px solid var(--iris-color);
   outline: none;
 }
 .form-icon {
@@ -233,7 +236,7 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus + .form-icon {
-  fill: var(--brand-color);
+  fill: var(--iris-color);
 }
 
 .form-label {
@@ -249,7 +252,6 @@ textarea {
 }
 .checkbox .form-label {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   display: flex;
 }
@@ -277,7 +279,7 @@ textarea {
   margin-left: 8px;
 }
 .policy-link {
-  color: var(--brand-color);
+  color: var(--iris-color);
 }
 .form-input::placeholder {
   font-size: 12px;
@@ -290,7 +292,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   min-width: 170px;
-  background: var(--brand-color);
+  background-color: var(--iris-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
   border-radius: 4px;
@@ -301,15 +303,11 @@ textarea {
   line-height: 1.19;
   cursor: pointer;
   padding: 16px 32px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-button:hover,
 .submit-button:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.submit-button:active {
-  background: #404bbf;
+  background-color: var(--brand-color);
 }
 /* hero */
 .hero {
@@ -340,7 +338,7 @@ textarea {
 }
 .hero-button {
   min-width: 170px;
-  background: var(--brand-color);
+  background: var(--iris-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
   border-radius: 4px;
@@ -351,15 +349,11 @@ textarea {
   line-height: 1.19;
   cursor: pointer;
   padding: 16px 32px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.hero-button:active {
-  background: #404bbf;
+  background: var(--brand-color);
 }
 
 /*section common*/
@@ -442,7 +436,7 @@ textarea {
 }
 .team-sl-link {
   display: block;
-  background-color: var(--brand-color);
+  background-color: var(--iris-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -450,7 +444,7 @@ textarea {
 }
 .team-sl-link:hover,
 .team-sl-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--brand-color);
 }
 .team-sl-icon {
   width: 16px;
@@ -549,6 +543,7 @@ textarea {
   flex-direction: column;
 }
 .footer-form-input {
+  width: 264px;
   background-color: var(--background-dark);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -558,7 +553,7 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-input:focus {
-  border: 1px solid var(--brand-color);
+  border: 1px solid var(--iris-color);
   outline: none;
 }
 .footer-form-input::placeholder {
@@ -573,7 +568,7 @@ textarea {
   justify-content: center;
   align-items: center;
   min-width: 168px;
-  background: var(--brand-color);
+  background: var(--iris-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
   border-radius: 4px;
@@ -593,11 +588,7 @@ textarea {
 }
 .footer-button:hover,
 .footer-button:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.footer-button:active {
-  background: #404bbf;
+  background: var(--brand-color);
 }
 
 /*portfolio*/
@@ -679,7 +670,7 @@ textarea {
 .gallery-thumb::before {
   display: inline-block;
   content: '';
-  background-color: var(--brand-color);
+  background-color: var(--iris-color);
 }
 .gallery-thumb-text {
   top: 0;
